@@ -24,6 +24,8 @@ body {
 .sidebar {
     background-color: red;
     grid-area: sidebar;
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 
 .main-content {
