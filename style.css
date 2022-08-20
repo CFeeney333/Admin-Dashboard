@@ -1,8 +1,22 @@
+:root {
+    --normal-icon-size: 1.5rem;
+    --big-icon-size: 3rem;
+    --thumbnail-size: 2.5rem;
+    --big-thumbnail-size: 4rem;
+
+    --primary-font-family: 'Courier New', Courier, monospace;
+
+    --fs-large: 1.5rem;
+
+    --fw-heavy: 900;
+}
+
 body {
     margin: 0;
 }
 
 .container {
+    font-family: var(--primary-font-family);
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -13,19 +27,113 @@ body {
 }
 
 .header {
-    background-color: blue;
+    padding: 1rem 2rem;
+    background-color: white;
     grid-area: header;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: 4rem 4rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: .5rem;
+    justify-content: center;
+}
+
+.search-bar {
+    border: none;
+    border-radius: 1rem;
+    background-color: darkgrey;
+    padding: 0 1rem;
+}
+
+.icon {
+    width: var(--normal-icon-size);
+}
+
+.big-icon {
+    width: var(--big-icon-size);
+}
+
+.account {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+}
+
+.thumbnail {
+    width: var(--thumbnail-size);
+    height: var(--thumbnail-size);
+}
+
+.thumbnail, .big-thumbnail {
+    border-radius: 50%;
+}
+
+.welcome {
+    display: grid;
+    grid-template-columns: auto 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "profile message"
+        "profile name";
+    gap: 1rem;
     align-items: center;
 }
 
+.big-thumbnail {
+    grid-area: profile;
+    width: var(--big-thumbnail-size);
+    height: var(--big-thumbnail-size);
+}
+
+.welcome-message {
+    grid-area: message;
+}
+
+.username {
+    font-size: var(--fs-large);
+    font-weight: var(--fw-heavy);
+    grid-area: name;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+button {
+    background-color: lightblue;
+    border: none;
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+}
+
 .sidebar {
-    background-color: red;
+    background-color: lightblue;
     grid-area: sidebar;
     display: grid;
     grid-template-rows: auto 1fr;
+}
+
+.heading, .menu-item {
+    padding-left: 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+}
+
+.menu-item .icon {
+    justify-self: center;
 }
 
 .main-content {
