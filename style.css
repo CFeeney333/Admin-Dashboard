@@ -31,4 +31,6 @@ body {
 .main-content {
     background-color: yellow;
     grid-area: main-content;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
