@@ -4,6 +4,7 @@
 
     --clr-primary-400: hsl(0, 0%, 0%);
     --clr-primary-500: hsl(0, 0%, 50%);
+    --clr-primary-600: hsl(0, 0%, 100%);
 
     --clr-neutral-100: hsl(0, 0%, 100%);
     --clr-neutral-400: hsl(214, 32%, 91%);
@@ -79,6 +80,10 @@ svg {
 
 .text-primary-500 {
     color: var(--clr-primary-500);
+}
+
+.text-primary-600 {
+    color: var(--clr-primary-600);
 }
 
 .text-accent-100 {
