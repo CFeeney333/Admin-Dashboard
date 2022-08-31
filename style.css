@@ -89,3 +89,52 @@ header {
     background-color: red;
     grid-area: content;
 }
+
+/* Utility classes */
+.text-primary-900 {
+    color: var(--clr-primary-900);
+}
+
+.text-primary-500 {
+    color: var(--clr-primary-500);
+}
+
+.text-primary-100 {
+    color: var(--clr-primary-100);
+}
+
+.accent-primary-900 {
+    color: var(--clr-accent-primary-900);
+}
+
+.accent-secondary-900 {
+    color: var(--clr-accent-secondary-900);
+}
+
+.fw-bold {
+    font-weight: var(--fw-bold);
+}
+
+.fw-normal {
+    font-weight: var(--fw-normal);
+}
+
+.fs-xs {
+    font-size: var(--fs-100);
+}
+
+.fs-s {
+    font-size: var(--fs-300);
+}
+
+.fs-m {
+    font-size: var(--fs-500);
+}
+
+.fs-l {
+    font-size: var(--fs-700);
+}
+
+.fs-xl {
+    font-size: var(--fs-900);
+}
