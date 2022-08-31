@@ -1,3 +1,21 @@
+:root {
+    --clr-primary-900: hsl(0, 0, 0);
+    --clr-primary-500: hsl(0, 0, 50);
+    --clr-primary-100: hsl(0, 0, 100);
+
+    --clr-accent-primary-900: hsl(48, 96%, 53%);
+    --clr-accent-secondary-900: hsl(201, 79%, 46%);
+
+    --fs-100: 1rem;
+    --fs-300: 1.25rem;
+    --fs-500: 1.5rem;
+    --fs-700: 1.75rem;
+    --fs-900: 2rem;
+
+    --fw-bold: 900;
+    --fw-normal: 500;
+}
+
 /* Box sizing rules */
 *,
 *::before,
