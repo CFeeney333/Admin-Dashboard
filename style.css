@@ -45,3 +45,29 @@ svg {
     max-width: 100%;
     display: block;
 }
+
+
+/* Component styling */
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar content"
+}
+
+header {
+    background-color: blue;
+    grid-area: header;
+}
+
+.sidebar {
+    background-color: green;
+    grid-area: sidebar;
+}
+
+.content {
+    background-color: red;
+    grid-area: content;
+}
