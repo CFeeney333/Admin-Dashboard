@@ -1,7 +1,7 @@
 :root {
-    --clr-primary-900: hsl(0, 0, 0);
-    --clr-primary-500: hsl(0, 0, 50);
-    --clr-primary-100: hsl(0, 0, 100);
+    --clr-primary-900: hsl(0, 0, 0%);
+    --clr-primary-500: hsl(214, 32%, 91%);
+    --clr-primary-100: hsl(0, 0, 100%);
 
     --clr-accent-primary-900: hsl(48, 96%, 53%);
     --clr-accent-secondary-900: hsl(201, 79%, 46%);
@@ -76,17 +76,17 @@ body {
 }
 
 header {
-    background-color: blue;
+    background-color: var(--clr-primary-100);
     grid-area: header;
 }
 
 .sidebar {
-    background-color: green;
+    background-color: var(--clr-accent-secondary-900);
     grid-area: sidebar;
 }
 
 .content {
-    background-color: red;
+    background-color: var(--clr-primary-500);
     grid-area: content;
 }
 
