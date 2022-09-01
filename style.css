@@ -1,7 +1,7 @@
 :root {
-    --clr-primary-900: hsl(0, 0, 0%);
+    --clr-primary-900: hsl(0, 0%, 0%);
     --clr-primary-500: hsl(214, 32%, 91%);
-    --clr-primary-100: hsl(0, 0, 100%);
+    --clr-primary-100: hsl(0, 0%, 100%);
 
     --clr-accent-primary-900: hsl(48, 96%, 53%);
     --clr-accent-secondary-900: hsl(201, 79%, 46%);
@@ -75,6 +75,9 @@ body {
         "sidebar content"
 }
 
+
+/* Header */
+
 header {
     grid-area: header;
     display: grid;
@@ -84,17 +87,37 @@ header {
     padding: 1.5em 3em;
 }
 
+
+/* Sidebar */
+
 .sidebar {
+    background-color: var(--clr-accent-secondary-900);
     grid-area: sidebar;
     display: flex;
     flex-direction: column;
     gap: 3em;
+    padding: .5em;
 }
 
-/* .sidebar-item {
+menu {
     display: grid;
+    gap: 1em;
+}
 
-} */
+.sidebar-item {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    justify-items: left;
+    align-items: center;
+    gap: .5em;
+}
+
+.sidebar-item img {
+    justify-self: center;
+}
+
+
+/* Content */
 
 .content {
     grid-area: content;
@@ -166,4 +189,12 @@ header {
 
 .fs-xl {
     font-size: var(--fs-900);
+}
+
+.icon-small {
+    max-width: 1em;
+}
+
+.icon-big {
+    max-width: 1.5em;
 }

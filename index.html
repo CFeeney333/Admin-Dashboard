@@ -7,22 +7,73 @@
     <link rel="stylesheet" href="style.css">
     <title>Dashboard</title>
 </head>
-<body style="background-color: red;">
+<body>
+
     <header style="background-color:blue;">
         <div style="background-color:aliceblue;">Search</div>
         <div style="background-color:brown;">Account</div>
         <div style="background-color:yellow;">Welcome</div>
-        <div style="background-color:beige;"">Buttons</div>
+        <div style="background-color:beige;">Buttons</div>
     </header>
-    <div class="sidebar" style="background-color: orange;">
-        <div style="background-color: pink;">Dashboard</div>
-        <div style="background-color:beige;">Main Menu</div>
-        <div style="background-color: blueviolet;">Extra Menu</div>
+
+    <div class="sidebar | text-primary-100">
+        <div class="fs-xl">
+            <div class="sidebar-item">
+                <img class="icon-big" src="icons/view-dashboard.svg" alt="">
+                <h1>Dashboard</h1>
+            </div>
+        </div>
+        <div class="fs-m">
+            <menu>
+                <li class="sidebar-item">
+                    <img class="icon-small" src="icons/home.svg" alt="">
+                    <p>Home</p>
+                </li>
+                <li class="sidebar-item">
+                    <img class="icon-small" src="icons/card-account-phone.svg" alt="">
+                    <p>Profile</p>
+                </li>
+                <li class="sidebar-item">
+                    <img class="icon-small" src="icons/message-reply.svg" alt="">
+                    <p>Messages</p>
+                </li>
+                <li class="sidebar-item">
+                    <img class="icon-small" src="icons/clock-time-three.svg" alt="">
+                    <p>History</p>
+                </li>
+                <li class="sidebar-item">
+                    <img class="icon-small" src="icons/note-multiple.svg" alt="">
+                    <p>Tasks</p>
+                </li>
+                <li class="sidebar-item">
+                    <img class="icon-small" src="icons/account-group.svg" alt="">
+                    <p>Communities</p>
+                </li>
+            </menu>
+        </div>
+        <div class="fs-m">
+            <menu>
+                <li class="sidebar-item">
+                    <img class="icon-small" src="icons/cog.svg" alt="">
+                    <p>Settings</p>
+                </li>
+                <li class="sidebar-item">
+                    <img class="icon-small" src="icons/help-box.svg" alt="">
+                    <p>Support</p>
+                </li>
+                <li class="sidebar-item">
+                    <img class="icon-small" src="icons/shield-check.svg" alt="">
+                    <p>Privacy</p>
+                </li>
+            </menu>
+        </div>
     </div>
+
     <div class="content" style="background-color: green;">
         <div id="projects" style="background-color: red;">Your Projects</div>
         <div id="announcements" style="background-color: yellow;">Announcements</div>
         <div id="trending" style="background-color: grey;">Trending</div>
     </div>
+
 </body>
 </html>
