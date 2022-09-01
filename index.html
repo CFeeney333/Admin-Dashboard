@@ -9,11 +9,28 @@
 </head>
 <body>
 
-    <header style="background-color:blue;">
-        <div style="background-color:aliceblue;">Search</div>
-        <div style="background-color:brown;">Account</div>
-        <div style="background-color:yellow;">Welcome</div>
-        <div style="background-color:beige;">Buttons</div>
+    <header>
+        <div class="flow-container">
+            <label for="search-input"><img class="icon-small" src="icons/magnify.svg" alt="search"></label>
+            <input type="search" id="search-input">
+        </div>
+        <div class="flow-container reverse-flow">
+            <a href="#"><img class="icon-small" src="icons/bell-ring-outline.svg" alt="notifications"></a>
+            <img class="profile-small" src="images/pfp.jpg" alt="account">
+            <p class="fs-m fw-bold">Morgan Oakley</p>
+        </div>
+        <div class="flow-container">
+            <img src="images/pfp.jpg" alt="profile" class="profile-big">
+            <div>
+                <p class="fs-s fw-bold">Hi there,</p>
+                <h1 class="fs-l fw-bold">Morgan Oakley (@morgan)</h1>
+            </div>
+        </div>
+        <div class="flow-container">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+        </div>
     </header>
 
     <div class="sidebar | text-primary-100">
