@@ -82,6 +82,10 @@ body {
     font-family: "Roboto";
 }
 
+.aside {
+    background-color: var(--clr-primary-100);
+}
+
 .flow-container {
     display: flex;
     align-items: center;
@@ -102,6 +106,23 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: 12em;
     gap: 1.5em;
+}
+
+.headed-content {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.flow-column {
+    /* display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+    align-items: center; */
+    display: flex;
+    flex-direction: column;
+}
+
+.padding-block {
+    padding: 1em;
 }
 
 
@@ -172,7 +193,6 @@ menu {
     grid-template-areas:
         "projects announcements"
         "projects trending";
-    padding: 1em;
     gap: 1em;
 }
 
@@ -191,10 +211,8 @@ section h1 {
 .card {
     background-color: var(--clr-primary-100);
     border-left: .5em solid var(--clr-accent-primary-900);
-    border-radius: .5em;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    padding: 1em;
 }
 
 .card h2 {
@@ -213,13 +231,47 @@ section h1 {
     justify-self: end;
 }
 
+#announcements h2,
+#trending h2 {
+    font-size: var(--fs-100);
+    font-weight: var(--fw-bold);
+}
+
+#announcements p,
+#trending p {
+    font-size: var(--fs-100);
+    font-weight: var(--fw-normal);
+    color: var(--clr-primary-700);
+}
+
 #announcements {
     grid-area: announcements;
+}
+
+#announcements .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #trending {
     grid-area: trending;
 }
+
+.item {
+    flex: 1;
+}
+
+.item:not(:first-child) {
+    border-top: 1px solid var(--clr-primary-700);
+}
+
+#announcements .aside,
+#trending .aside {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 
 /* Utility classes */
 .text-primary-900 {
@@ -270,6 +322,10 @@ section h1 {
     font-size: var(--fs-900);
 }
 
+.rounded-corners {
+    border-radius: .5em;
+}
+
 .icon-small {
     width: 1.5em;
 }
@@ -290,4 +346,8 @@ section h1 {
 
 .profile-small, .profile-big {
     border-radius: 50%;
+}
+
+.shadow {
+    box-shadow: 2px 2px 4px 0px var(--clr-primary-700);
 }
